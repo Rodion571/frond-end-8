@@ -51,24 +51,193 @@ body {
     height: 100vh; 
     object-fit: contain; 
 }
-.vitryak{
+.vitryak {
     position: absolute;
     top: 54%;
     left: 70vw;
 }
-.blade{
+.blade {
     position: absolute;
     top: 50%;
-    left: 67.2vw; 
+    left: 67.2vw;
+    animation: spin 5s linear infinite;
 }
-.moon{
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.moon {
     position: absolute;
     top: 0%;
     left: 23vw;
-}
-.union :nth-child(1){
-    position: absolute;
-    top: 20%;
-    left: 23vw;
+    animation: growFade 3s infinite; 
 }
 
+@keyframes growFade {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(2); 
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2); 
+        opacity: 0; 
+    }
+}
+
+.union {
+    position: absolute;
+    top: 15%;
+    left: 100vw;
+    animation: moveLeft1 10s infinite linear;
+}
+
+@keyframes moveLeft1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+.union2 {
+    position: absolute;
+    top: 35%;
+    left: 100vw;
+    animation: moveLeft2 12s infinite linear;
+}
+
+@keyframes moveLeft2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+.union3 {
+    position: absolute;
+    top: 30%;
+    left: 100vw;
+    animation: moveLeft3 15s infinite linear;
+}
+
+@keyframes moveLeft3 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+
+.parent {
+    position: relative;
+}
+.chow:nth-child(1) {
+    position: absolute;
+    top: 20%; 
+    left: 20vw;
+    animation: fall 4s infinite; 
+}
+
+@keyframes fall {
+    20% {
+        top: 20%; 
+    }
+    100% {
+        top: 80%; 
+    }
+}
+
+.chow:nth-child(2) {
+    position: absolute;
+    top: 20%; 
+    left: 38vw;
+    animation: fall2 4s infinite; 
+}
+
+@keyframes fall2 {
+    20% {
+        top: 20%; 
+    }
+    100% {
+        top: 70%; 
+    }
+}
+
+.chow:nth-child(3) {
+    position: absolute;
+    top: 30%; 
+    left: 80vw;
+    animation: fall3 4s infinite; 
+}
+
+@keyframes fall3 {
+    30% {
+        top: 30%; 
+    }
+    100% {
+        top: 80%; 
+    }
+}
+
+.chow:nth-child(4) {
+    position: absolute;
+    top: 10%; 
+    left: 50vw;
+    animation: fall4 4s infinite; 
+}
+
+@keyframes fall4 {
+    10% {
+        top: 10%; 
+    }
+    100% {
+        top: 50%; 
+    }
+}
+
+.chow:nth-child(5) {
+    position: absolute;
+    top: 10%;
+    left: 15vw;   
+    animation: fall5 4s infinite;
+}
+
+@keyframes fall5 {
+    10% {
+        top: 10%;
+    }
+    100% {
+        top: 50%;
+    }
+}  
+
+.chow:nth-child(6) {
+    position: absolute;
+    top: 10%; 
+    left: 60vw;
+    animation: fall6 4s infinite; 
+}
+
+@keyframes fall6 {
+    10% {
+        top: 10%; 
+    }
+    100% {
+        top: 25%; 
+    }
+}
